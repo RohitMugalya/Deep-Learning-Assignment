@@ -14,6 +14,10 @@ The method involves three key stages:
 3.  An **unsupervised semantic segmentation network** is introduced for preserving semantic information during intensive image enhancement.
 
 
+## Model's Architecture
+![image failed to load](main_architecture.jpg)
+
+
 ## Model's Inference
 <p>
     <img src="test_input/1.png" width="250px">
