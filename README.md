@@ -16,8 +16,8 @@ The method involves three key stages:
 
 ## Model's Inference
 <p>
-    <img src="test_input/1.png" height="250px" width="250px">
-    <img src="test_output/1.png" height="250px" width="250px">
+    <img src="test_input/1.png" width="250px">
+    <img src="test_output/1.png" width="250px">
 </p>
 
 ### More samples can be found in
