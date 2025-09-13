@@ -70,17 +70,16 @@ Based on the paper analysis, these traditional methods represent the state-of-th
 - **Various enhancement techniques** - Comprehensive comparison baseline
 
 ## Performance Characteristics
-
-| Method | Speed | Quality | Memory | Complexity |
-|--------|-------|---------|---------|------------|
-| Histogram EQ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐ |
-| CLAHE | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
-| Gamma Correction | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐ |
-| SSR | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-| MSR | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
-| LIME | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-| Exposure | ⭐⭐⭐⭐⭐ | ⭐ | ⭐⭐⭐⭐⭐ | ⭐ |
-| Adaptive Gamma | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
+| Method              | Avg Time (s) | Speed  | Quality | Memory | Complexity |
+|---------------------|--------------|--------|---------|--------|------------|
+| Histogram EQ        | 0.0012       | ⭐⭐⭐⭐⭐ | ⭐⭐      | ⭐⭐⭐⭐⭐  | ⭐          |
+| CLAHE               | 0.0064       | ⭐⭐⭐⭐  | ⭐⭐      | ⭐⭐⭐⭐   | ⭐⭐         |
+| Gamma Correction    | 0.0114       | ⭐⭐⭐⭐⭐ | ⭐⭐⭐     | ⭐⭐⭐⭐⭐  | ⭐          |
+| Retinex SSR         | 0.1220       | ⭐⭐⭐   | ⭐⭐      | ⭐⭐⭐    | ⭐⭐⭐        |
+| Retinex MSR         | 2.9197       | ⭐⭐    | ⭐⭐⭐     | ⭐⭐     | ⭐⭐⭐        |
+| LIME                | 0.0278       | ⭐⭐⭐   | ⭐⭐⭐⭐    | ⭐⭐⭐    | ⭐⭐⭐        |
+| Exposure Correction | 0.0009       | ⭐⭐⭐⭐⭐ | ⭐       | ⭐⭐⭐⭐⭐  | ⭐          |
+| Adaptive Gamma      | 0.0185       | ⭐⭐⭐⭐  | ⭐       | ⭐⭐⭐⭐   | ⭐⭐         |
 
 
 ## Performance Comparison
