@@ -36,10 +36,10 @@ The method involves three key stages:
 </table>
 
 
-### Quantitative analysis:
+### Quantitative Analysis
 
 | Method              | Speed  | Quality | Memory | Complexity |
-|---------------------|--------------|--------|---------|--------|------------|
+|---------------------|--------|---------|--------|------------|
 | Histogram EQ        | ⭐⭐⭐⭐⭐ | ⭐⭐      | ⭐⭐⭐⭐⭐  | ⭐          |
 | CLAHE               | ⭐⭐⭐⭐  | ⭐⭐      | ⭐⭐⭐⭐   | ⭐⭐         |
 | Gamma Correction    | ⭐⭐⭐⭐⭐ | ⭐⭐⭐     | ⭐⭐⭐⭐⭐  | ⭐          |
@@ -48,7 +48,8 @@ The method involves three key stages:
 | LIME                | ⭐⭐⭐   | ⭐⭐⭐⭐    | ⭐⭐⭐    | ⭐⭐⭐        |
 | Exposure Correction | ⭐⭐⭐⭐⭐ | ⭐       | ⭐⭐⭐⭐⭐  | ⭐          |
 | Adaptive Gamma      | ⭐⭐⭐⭐  | ⭐       | ⭐⭐⭐⭐   | ⭐⭐         |
-| DL Model            | ⭐     | ⭐⭐⭐⭐⭐   | ⭐⭐     | ⭐⭐⭐⭐⭐      |
+| **DL Model**        | ⭐     | ⭐⭐⭐⭐⭐   | ⭐⭐     | ⭐⭐⭐⭐⭐      |
+
 
 ![Average-Time-Comparison](Time-Taken-Comparison.png)
 
