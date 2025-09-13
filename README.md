@@ -25,8 +25,8 @@ The method involves three key stages:
 ![image failed to load](traditional_model/traditional_comparison.png)
 #### DL model:
 <p>
-    <img src="test_input/1.png" width="250px">
-    <img src="test_output/1.png" width="250px">
+   Original Image <img src="test_input/1.png" width="250px">
+   Enhanced Image <img src="test_output/1.png" width="250px">
 </p>
 
 ### Quantitative analysis:
