@@ -20,10 +20,31 @@ The method involves three key stages:
 
 
 ## Model's Inference
+### Qualitative analysis:
+#### Traditional models:
+![image failed to load](traditional_model/traditional_comparison.png)
+#### DL model:
 <p>
     <img src="test_input/1.png" width="250px">
     <img src="test_output/1.png" width="250px">
 </p>
+
+### Quantitative analysis:
+
+| Method              | Avg Time (s) | Speed  | Quality | Memory | Complexity |
+|---------------------|--------------|--------|---------|--------|------------|
+| Histogram EQ        | ⭐⭐⭐⭐⭐ | ⭐⭐      | ⭐⭐⭐⭐⭐  | ⭐          |
+| CLAHE               | ⭐⭐⭐⭐  | ⭐⭐      | ⭐⭐⭐⭐   | ⭐⭐         |
+| Gamma Correction    | ⭐⭐⭐⭐⭐ | ⭐⭐⭐     | ⭐⭐⭐⭐⭐  | ⭐          |
+| Retinex SSR         | ⭐⭐⭐   | ⭐⭐      | ⭐⭐⭐    | ⭐⭐⭐        |
+| Retinex MSR         | ⭐⭐    | ⭐⭐⭐     | ⭐⭐     | ⭐⭐⭐        |
+| LIME                | ⭐⭐⭐   | ⭐⭐⭐⭐    | ⭐⭐⭐    | ⭐⭐⭐        |
+| Exposure Correction | ⭐⭐⭐⭐⭐ | ⭐       | ⭐⭐⭐⭐⭐  | ⭐          |
+| Adaptive Gamma      | ⭐⭐⭐⭐  | ⭐       | ⭐⭐⭐⭐   | ⭐⭐         |
+| DL Model            | ⭐     | ⭐⭐⭐⭐⭐   | ⭐⭐     | ⭐⭐⭐⭐⭐      |
+
+
+
 
 ### More samples can be found in
 * Sample Low-light images: [test_input/](test_input/)
