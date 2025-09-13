@@ -52,6 +52,80 @@ This directory contains implementations of traditional (non-deep learning) metho
 - **Pros**: Automatically adapts to image brightness
 - **Cons**: Still a global operation
 
+## Model's Inference
+![image failed to load](traditional_comparison.png)
+
+### More samples can be found in
+* Sample Low-light images: [test_input/](test_input/)
+* Sample Low-light Enhanced images [test_output/](test_output/)
+
+
+## Research Context
+
+Based on the paper analysis, these traditional methods represent the state-of-the-art before deep learning approaches. The paper specifically mentions:
+
+- **Histogram Equalization** [17, 44] - Classic approach
+- **Retinex Theory** [24, 47, 8, 9, 13] - Human vision-inspired methods
+- **LIME** [6] - Modern traditional approach
+- **Various enhancement techniques** - Comprehensive comparison baseline
+
+## Performance Characteristics
+
+| Method | Speed | Quality | Memory | Complexity |
+|--------|-------|---------|---------|------------|
+| Histogram EQ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐ |
+| CLAHE | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
+| Gamma Correction | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐ |
+| SSR | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| MSR | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
+| LIME | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| Exposure | ⭐⭐⭐⭐⭐ | ⭐ | ⭐⭐⭐⭐⭐ | ⭐ |
+| Adaptive Gamma | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
+
+
+## Performance Comparison
+```
+==================================================
+EXPERIMENT SUMMARY
+==================================================
+histogram_eq        : 0.0012s avg, 64 images
+clahe               : 0.0064s avg, 64 images
+gamma_correction    : 0.0114s avg, 64 images
+retinex_ssr         : 0.1220s avg, 64 images
+retinex_msr         : 2.9197s avg, 64 images
+lime                : 0.0278s avg, 64 images
+exposure_correction : 0.0009s avg, 64 images
+adaptive_gamma      : 0.0185s avg, 64 images
+```
+
+## Comparison with Deep Learning Methods
+
+These traditional methods serve as baselines for comparison with the main deep learning approach in this repository. Key differences:
+
+**Traditional Methods:**
+- ✅ Fast processing
+- ✅ No training required
+- ✅ Interpretable parameters
+- ❌ Limited adaptability
+- ❌ May not handle complex scenarios well
+
+**Deep Learning (Main Model):**
+- ✅ Better perceptual quality
+- ✅ Handles complex illumination
+- ✅ Semantic-aware enhancement
+- ❌ Requires training
+- ❌ Slower inference
+- ❌ Less interpretable
+
+## References
+
+1. **Histogram Equalization**: Gonzalez, R.C. and Woods, R.E., 2017. Digital image processing.
+2. **CLAHE**: Zuiderveld, K., 1994. Contrast limited adaptive histogram equalization.
+3. **Retinex Theory**: Land, E.H. and McCann, J.J., 1971. Lightness and retinex theory.
+4. **LIME**: Guo, X., Li, Y. and Ling, H., 2016. LIME: Low-light image enhancement via illumination map estimation.
+
+---
+
 ## Usage
 
 ```bash
@@ -98,45 +172,3 @@ traditional_results/
 ├── exposure_correction/
 └── adaptive_gamma/
 ```
-
-## Performance Comparison
-```
-==================================================
-EXPERIMENT SUMMARY
-==================================================
-histogram_eq        : 0.0012s avg, 64 images
-clahe               : 0.0064s avg, 64 images
-gamma_correction    : 0.0114s avg, 64 images
-retinex_ssr         : 0.1220s avg, 64 images
-retinex_msr         : 2.9197s avg, 64 images
-lime                : 0.0278s avg, 64 images
-exposure_correction : 0.0009s avg, 64 images
-adaptive_gamma      : 0.0185s avg, 64 images
-```
-
-## Comparison with Deep Learning Methods
-
-These traditional methods serve as baselines for comparison with the main deep learning approach in this repository. Key differences:
-
-**Traditional Methods:**
-- ✅ Fast processing
-- ✅ No training required
-- ✅ Interpretable parameters
-- ❌ Limited adaptability
-- ❌ May not handle complex scenarios well
-
-**Deep Learning (Main Model):**
-- ✅ Better perceptual quality
-- ✅ Handles complex illumination
-- ✅ Semantic-aware enhancement
-- ❌ Requires training
-- ❌ Slower inference
-- ❌ Less interpretable
-
-## References
-
-1. **Histogram Equalization**: Gonzalez, R.C. and Woods, R.E., 2017. Digital image processing.
-2. **CLAHE**: Zuiderveld, K., 1994. Contrast limited adaptive histogram equalization.
-3. **Retinex Theory**: Land, E.H. and McCann, J.J., 1971. Lightness and retinex theory.
-4. **LIME**: Guo, X., Li, Y. and Ling, H., 2016. LIME: Low-light image enhancement via illumination map estimation.
-
