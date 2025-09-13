@@ -19,19 +19,26 @@ The method involves three key stages:
 ![image failed to load](main_architecture.jpg)
 
 
-## Model's Inference
+## Models Inference
 ### Qualitative analysis:
 #### Traditional models:
 ![image failed to load](traditional_model/traditional_comparison.png)
 #### DL model:
-<p>
-   Original Image <img src="test_input/1.png" width="250px">
-   Enhanced Image <img src="test_output/1.png" width="250px">
-</p>
+<table>
+  <tr>
+    <td align="center"><b>Original Image</b></td>
+    <td align="center"><b>Enhanced Image</b></td>
+  </tr>
+  <tr>
+    <td><img src="test_input/1.png" width="250px"></td>
+    <td><img src="test_output/1.png" width="250px"></td>
+  </tr>
+</table>
+
 
 ### Quantitative analysis:
 
-| Method              | Avg Time (s) | Speed  | Quality | Memory | Complexity |
+| Method              | Speed  | Quality | Memory | Complexity |
 |---------------------|--------------|--------|---------|--------|------------|
 | Histogram EQ        | ⭐⭐⭐⭐⭐ | ⭐⭐      | ⭐⭐⭐⭐⭐  | ⭐          |
 | CLAHE               | ⭐⭐⭐⭐  | ⭐⭐      | ⭐⭐⭐⭐   | ⭐⭐         |
@@ -43,7 +50,7 @@ The method involves three key stages:
 | Adaptive Gamma      | ⭐⭐⭐⭐  | ⭐       | ⭐⭐⭐⭐   | ⭐⭐         |
 | DL Model            | ⭐     | ⭐⭐⭐⭐⭐   | ⭐⭐     | ⭐⭐⭐⭐⭐      |
 
-
+![Average-Time-Comparison](Time-Taken-Comparison.png)
 
 
 ### More samples can be found in
