@@ -70,4 +70,4 @@ def process_video(video_path):
     print(f"🎬 Video saved at: {output_video_path}")
 
 # Example usage:
-process_video("videos/sample.mp4")
+process_video("video_inputs/sample1.mp4")
